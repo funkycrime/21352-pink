@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Зелинская](https://up.htmlacademy.ru/adaptive/9/user/21352).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Половников](https://htmlacademy.ru/profile/alexpol).
 
 ---
 
