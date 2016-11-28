@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Регистрация</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="pink-header">
+        <h1 class="visually-hidden">Pink</h1>
+        <div class="pink-header__logo">
+          <img src="placeholder" width="75" height="22" alt="Pink">
+        </div>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">Главная</li>
+              <li class="main-nav__item">Фотографии</li>
+              <li class="main-nav__item">Конкурс</li>
+              <li class="main-nav__item">HTML Academy</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="register">
+        <p>Конкурс на самое безбашенное путешествие с Пинк</p>
+        <form class="register__form" mathod="get" action="#">
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <fieldset class="user-info">
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+            <label for="middle_name">Отчество:</label>
+            <input type="text" id="middle_name" name="middle_name" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="user-achievements">
+            <label><input type="checkbox" checked> Сделал селфи с акулой</label>
+            <label><input type="checkbox" checked> Обгорел на пляже</label>
+            <label><input type="checkbox"> Видел Чака Норриса</label>
+            <label><input type="checkbox"> Накупил сувениров</label>
+            <label><input type="checkbox" checked> Удержал башню</label>
+            <label><input type="checkbox"> Разгромил отель</label>
+          </fieldset>
+          <fieldset class="user-contacts">
+            <label for="tel">Номер телефона</label>
+            <input type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}">
+            <label for="email">Адресок почты</label>
+            <input type="email" id="email" name="email" placeholder="Введите почту *" required>
+          </fieldset>
+          <fiedset class="user-app">
+            <p>С каким приложением путешествовали?</p>
+            <label><input type="radio" checked> Pink для iOS</label>
+            <label><input type="radio">Pink на Android</label>
+            <label><input type="radio">Windows Phone</label>
+          </fiedset>
+          <fieldset class="user-comment">
+            <label for="comment">Опишите свои эмоции</label>
+            <textarea type="text" id="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+          </fieldset>
+          <input type="submit" value="Отправить форму">
+          <span>* - обязательные поля</span>
+        </form>
+      </section>
+
+      <footer class="inner-footer">
+        <div class="inner-footer  logo">
+          <img src="placeholder" width="147" height="40" alt="Логотип Пинк">
+        </div>
+        <div class="social">
+          <a class="social__link  social__tw" herf="#" alt="Twitter">
+            <img src="placeholder" width="18" height="14" alt="Twitter">
+          </a>
+          <a class="social__link  social__fb" herf="#" alt="Facebook">
+            <img src="placeholder" width="9" height="18" alt="Facebook">
+          </a>
+          <a class="social__link  social__yt" herf="#" alt="YouTube">
+            <img src="placeholder" width="15" height="13" alt="YouTube">
+          </a>
+        </div>
+        <div class="copyright">
+          <a href="https://www.htmlacademy.ru/" alt="HTML Academy">Разработано<img src="placeholder" width="27" height="34" alt="HTML Academy"></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
