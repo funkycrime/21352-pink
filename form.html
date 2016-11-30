@@ -2,31 +2,30 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Регистрация</title>
+    <title>Пинк: Регистрация</title>
   </head>
 
   <body>
     <div class="container">
       <header class="pink-header">
-        <h1 class="visually-hidden">Pink</h1>
         <div class="pink-header__logo">
-          <img src="placeholder" width="75" height="22" alt="Pink">
+          <img src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
         </div>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item">Главная</li>
-              <li class="main-nav__item">Фотографии</li>
-              <li class="main-nav__item">Конкурс</li>
-              <li class="main-nav__item">HTML Academy</li>
+              <li class="main-nav__item"><a href="#" alt="Главная">Главная</a></li>
+              <li class="main-nav__item"><a href="#" alt="Фотографии">Фотографии</a></li>
+              <li class="main-nav__item"><a href="#" alt="Конкурс">Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://www.htmlacademy.ru" alt="HTML Academy">HTML Academy</a></li>
             </ul>
           </div>
         </nav>
+        <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </header>
 
       <section class="register">
-        <p>Конкурс на самое безбашенное путешествие с Пинк</p>
         <form class="register__form" mathod="get" action="#">
           <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
           <fieldset class="user-info">
@@ -38,6 +37,7 @@
             <input type="text" id="middle_name" name="middle_name" placeholder="Ну и отчество тоже">
           </fieldset>
           <fieldset class="user-achievements">
+            <h2>Ваши безбашенные достижения в путешествии</h2>
             <label><input type="checkbox" checked> Сделал селфи с акулой</label>
             <label><input type="checkbox" checked> Обгорел на пляже</label>
             <label><input type="checkbox"> Видел Чака Норриса</label>
@@ -61,28 +61,28 @@
             <label for="comment">Опишите свои эмоции</label>
             <textarea type="text" id="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
           </fieldset>
-          <input type="submit" value="Отправить форму">
+          <button type="submit">Отправить форму</button>
           <span>* - обязательные поля</span>
         </form>
       </section>
 
       <footer class="inner-footer">
         <div class="inner-footer  logo">
-          <img src="placeholder" width="147" height="40" alt="Логотип Пинк">
+          <img src="http://placehold.it/147x40" width="147" height="40" alt="Логотип Пинк">
         </div>
         <div class="social">
-          <a class="social__link  social__tw" herf="#" alt="Twitter">
-            <img src="placeholder" width="18" height="14" alt="Twitter">
+          <a class="social__link  social__link--tw" herf="#" alt="Twitter">
+            <img src="http://placehold.it/18x14" width="18" height="14" alt="Twitter">
           </a>
-          <a class="social__link  social__fb" herf="#" alt="Facebook">
-            <img src="placeholder" width="9" height="18" alt="Facebook">
+          <a class="social__link  social__link--fb" herf="#" alt="Facebook">
+            <img src="http://placehold.it/9x18" width="9" height="18" alt="Facebook">
           </a>
-          <a class="social__link  social__yt" herf="#" alt="YouTube">
-            <img src="placeholder" width="15" height="13" alt="YouTube">
+          <a class="social__link  social__link--yt" herf="#" alt="YouTube">
+            <img src="http://placehold.it/15x13" width="15" height="13" alt="YouTube">
           </a>
         </div>
         <div class="copyright">
-          <a href="https://www.htmlacademy.ru/" alt="HTML Academy">Разработано<img src="placeholder" width="27" height="34" alt="HTML Academy"></a>
+          <a href="https://www.htmlacademy.ru/" alt="HTML Academy">Разработано<img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a>
         </div>
       </footer>
     </div>
