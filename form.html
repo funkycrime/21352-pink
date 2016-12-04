@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пинк: Регистрация</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="pink-header">
+        <div class="pink-header__logo">
+          <img src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+        </div>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#">Главная</a></li>
+              <li class="main-nav__item"><a href="#">Фотографии</a></li>
+              <li class="main-nav__item"><a href="#">Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://www.htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+        <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </header>
+
+      <section class="register">
+        <form class="register__form" method="get" action="#">
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <fieldset class="register__form-field  register__form-field--bg-white">
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+            <label for="middle_name">Отчество:</label>
+            <input type="text" id="middle_name" name="middle_name" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="register__form-field  register__form-field--bg-gray">
+            <h2>Ваши безбашенные достижения в путешествии</h2>
+            <label><input type="checkbox" checked> Сделал селфи с акулой</label>
+            <label><input type="checkbox" checked> Обгорел на пляже</label>
+            <label><input type="checkbox"> Видел Чака Норриса</label>
+            <label><input type="checkbox"> Накупил сувениров</label>
+            <label><input type="checkbox" checked> Удержал башню</label>
+            <label><input type="checkbox"> Разгромил отель</label>
+          </fieldset>
+          <fieldset class="register__form-field  register__form-field--bg-white">
+            <label for="tel">Номер телефона</label>
+            <input type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}">
+            <label for="email">Адресок почты</label>
+            <input type="email" id="email" name="email" placeholder="Введите почту *" required>
+          </fieldset>
+          <fieldset class="register__form-field  register__form-field--bg-gray">
+            <h2>С каким приложением путешествовали?</h2>
+            <label><input type="radio" checked> Pink для iOS</label>
+            <label><input type="radio">Pink на Android</label>
+            <label><input type="radio">Windows Phone</label>
+          </fieldset>
+          <fieldset class="register__form-field  register__form-field--bg-white">
+            <h2>Опишите свои эмоции</h2>
+            <textarea id="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+          </fieldset>
+          <button type="submit">Отправить форму</button>
+          <span>* - обязательные поля</span>
+        </form>
+      </section>
+
+      <footer class="inner-footer">
+        <div class="inner-footer  logo">
+          <img src="http://placehold.it/147x40" width="147" height="40" alt="Логотип Пинк">
+        </div>
+        <div class="social">
+          <a class="social__link  social__link--tw" href="#">
+            <img src="http://placehold.it/18x14" width="18" height="14" alt="Twitter">
+          </a>
+          <a class="social__link  social__link--fb" href="#">
+            <img src="http://placehold.it/9x18" width="9" height="18" alt="Facebook">
+          </a>
+          <a class="social__link  social__link--yt" href="#">
+            <img src="http://placehold.it/15x13" width="15" height="13" alt="YouTube">
+          </a>
+        </div>
+        <div class="copyright">
+          <a href="https://www.htmlacademy.ru/">Разработано<img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

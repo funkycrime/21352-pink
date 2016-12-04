@@ -5,8 +5,192 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <div class="container">
+      <header class="pink-header">
+        <div class="pink-header  logo">
+          <img src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+        </div>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#">Главная</a></li>
+              <li class="main-nav__item"><a href="#">Фотографии</a></li>
+              <li class="main-nav__item"><a href="#">Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://www.htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+        <h1 class="page-title  visually-hidden">Pink</h1>
+      </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <section class="download">
+        <img src="http://placehold.it/320x314" alt="Приложение в Вашем телефоне">
+        <a href="#">Скачать приложение</a>
+        <div class="download-apps-list">
+          <a class="download-apps__item  download-apps__item--ios-app" href="#"><img src="http://placehold.it/47x56" width="47" height="56" alt="Приложение для Apple"></a>
+          <a class="download-apps__item  download-apps__item--android-app" href="#"><img src="http://placehold.it/43x47" width="43" height="47" alt="Приложение для Android"></a>
+          <a class="download-apps__item  download-apps__item--windows-app" href="#"><img src="http://placehold.it/44x41" width="44" height="41" alt="Приложение для Windows Phone"></a>
+          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features-intro">
+          <p class="features-intro__text">Устали от серости мегаполиса?</p>
+          <p class="features-intro__text">Нам есть, что вам предложить!</p>
+        </div>
+        <article class="features-items">
+          <div class="features-item">
+            <h2>Поднимает настроение</h2>
+            <p class="features-item__text">Приложение позволит вас победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="features-item">
+            <h2>Меняет мир вокруг</h2>
+            <p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="features-item">
+            <h2>Заводит новых друзей</h2>
+            <p class="features-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </article>
+        <img class="features-screen" src="http://placehold.it/157x320" width="157" height="320" alt="Всем привет!">
+      </section>
+
+      <section class="feedback-slider">
+        <div class="feedback-slider__wrapper">
+          <ul>
+            <li class="feedback-slider__slide">
+              <p class="feedback-slider__slide-name">Николай Петров</p>
+              <p class="feedback-slider__slide-comment">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+              </p>
+            </li>
+            <li class="feedback-slider__slide"></li>
+            <li class="feedback-slider__slide"></li>
+          </ul>
+          <div class="feedback-slider__slider-controls">
+            <i class="active"></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="price-slider">
+        <ul>
+          <li class="price-slider__slide">
+            <table class="price-slider__rate  price-slider__rate--hit">
+              <tr>
+                <td>
+                  <img src="http://placehold.it/74x73" width="74" height="73" alt="Хит">
+                  <h3>Стандарт</h3>
+                  <span class="price-slider__price">3,99 USD</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price-slider__option">Розовый фильтр</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price-slider__option">Смайлики</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price-slider__option">Комментарии</span>
+                  <img src="http://placehold.it/27x26" width="27" height="26" alt="Не включать">
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li class="price-slider__slide">
+            <table class="price-slider__rate">
+              <tr>
+                <td>
+                  <img src="http://placehold.it/74x73" width="74" height="73" alt="Хит">
+                  <h3>...</h3>
+                  <span class="price-slider__price">...</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price-slider__option">Розовый фильтр</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price-slider__option">Смайлики</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price-slider__option">Комментарии</span>
+                  <img src="http://placehold.it/27x26" width="27" height="26" alt="Не включать">
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li class="price-slider__slide">
+            <table class="price-slider__rate">
+              <tr>
+                <td>
+                  <img src="http://placehold.it/74x73" width="74" height="73" alt="Хит">
+                  <h3>Стандарт</h3>
+                  <span class="price-slider__price">3,99 USD</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price-slider__option">Розовый фильтр</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price-slider__option">Смайлики</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price-slider__option">Комментарии</span>
+                  <img src="http://placehold.it/27x26" width="27" height="26" alt="Не включать">
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contacts">
+        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+        <article class="contacts__data">
+          <p class="contacts__data-title">Звоните:</p>
+          <p class="contacts__data-value">+7 (812) 555-66-66</p>
+        </article>
+        <article class="contacts__data">
+          <p class="contacts__data-title">Пишите:</p>
+          <p class="contacts__data-value">mail@htmlacademy.ru</p>
+        </article>
+        <article class="contacts__data">
+          <p class="contacts__data-title">Приезжайте в гости:</p>
+          <p class="contacts__data-value">ул. Большая Конюшенная, 19/8</p>
+        </article>
+      </section>
+
+      <footer class="main-footer">
+        <img src="http://placehold.it/320x645" width="320" height="645" alt="Мы на карте">
+      </footer>
+    </div>
+
+<!--    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>-->
 
   </body>
 </html>
