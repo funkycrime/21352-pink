@@ -1,0 +1,24 @@
+.download-apps-list {
+  display: block;
+  text-align: center;
+}
+
+.download-apps__item {
+  display: inline-block;
+  padding-bottom: 31px;
+}
+
+.download-apps__item.download-apps__item--ios-app,
+.download-apps__item.download-apps__item--android-app {
+  margin-right: 35px;
+}
+
+.download-apps__info-text {
+  font-family: "Open Sans Light";
+  font-weight: lighter;
+  color: $white;
+
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 35px;
+}

@@ -1,0 +1,99 @@
+.feedback-slider {
+  display: block;
+  position: relative;
+
+  min-width: 290px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 49px;
+
+  background-color: $white;
+  margin-top: -43px;
+
+  &::after {
+    content: "";
+    height: 35px;
+    background-image:  url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    position: absolute;
+    bottom: -34px;
+    left: 0;
+    right: 0;
+    display: block;
+  }
+}
+
+.feedback-slider__wrapper {
+  position: relative;
+  width: 290px;
+}
+
+.feedback-slider__inner-slider {
+  overflow: hidden;
+}
+
+.feedback-slider__slides {
+  width: 300%;
+  transition: transform 0.6s ease;
+}
+
+.feedback-slider__slide {
+  display: block;
+  float: left;
+
+  width: 290px;
+
+  list-style: none;
+
+  text-align: center;
+}
+
+.feedback-slider__slide-name {
+  font-family: "Open Sans Bold";
+  font-weight: bold;
+  color: #000000;
+  @include font-1830;
+}
+
+.feedback-slider__slide-comment {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: $main-color;
+  @include font-1430;
+}
+
+.feedback-slider__slider-controls {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.feedback-slider__wrapper input[type="radio"] {
+  display: none;
+}
+
+.feedback-slider__slider-controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  transition: background-color 0.2s;
+  margin-bottom: 3px;
+}
+
+#btn-1:checked ~ .feedback-slider__slider-controls label[for="btn-1"],
+#btn-2:checked ~ .feedback-slider__slider-controls label[for="btn-2"],
+#btn-3:checked ~ .feedback-slider__slider-controls label[for="btn-3"] {
+  width: 6px;
+  height: 6px;
+  border: 3px solid $main-color;
+  background-color: #ffffff;
+  margin-bottom: 0;
+}

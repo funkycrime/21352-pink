@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Open Sans";
+  color: $main-color;
+  font-style: normal;
+  @include font-1424;
+
+  min-width: 320px;
+
+  @include tablet {
+    min-width: 700px;
+  }
+
+  @include desktop {
+    min-width: 1200px;
+  }
+}
+
+a {
+  color: $pink-text;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"),
+   url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: bold;
+  font-style: bold;
+
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff") format("woff"),
+   url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: lighter;
+  font-style: lighter;
+
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanslight.woff") format("woff"),
+   url("../fonts/openlight.woff2") format("woff2");
+}

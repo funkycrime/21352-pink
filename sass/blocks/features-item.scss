@@ -1,0 +1,24 @@
+.features-item {
+  display: block;
+  position: relative;
+
+  text-align: center;
+
+  padding-bottom: 20px;
+}
+
+.features-item__title {
+  font-family: "Open Sans Bold";
+  font-size: 18px;
+  color: #000000;
+
+  padding-bottom: 10px;
+}
+
+
+.features-item__text {
+  font-family: "Open Sans";
+  color: $main-color;
+
+  padding-bottom: 12px;
+}

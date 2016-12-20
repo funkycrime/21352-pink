@@ -1,0 +1,38 @@
+.features-intro {
+  display: block;
+  text-align: center;
+  position: relative;
+
+  background-color: $white;
+
+  padding-top: 46px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &::after {
+    content: "";
+    height: 35px;
+    background-image:  url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    display: block;
+  }
+}
+
+.features-intro__text {
+  font-family: "Open Sans Light";
+  color: $main-color;
+  @include font-2430;
+
+  padding-bottom: 14px;
+}
+
+
+.features-intro__text--last {
+  padding-bottom: 20px;
+}

@@ -1,0 +1,135 @@
+.main-nav {
+  display: block;
+  position: relative;
+}
+
+.main-nav__toggle {
+  float: right;
+  position: absolute;
+  top: -68px;
+  right: 0;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+
+  z-index: 10;
+
+  font-size: 0;
+
+  cursor: pointer;
+  background-color: $main-color;
+
+  border: none;
+
+  @include clearfix();
+}
+
+.main-nav--closed .main-nav__toggle {
+
+  &::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 20px;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: $white;
+  box-shadow: 0 10px 0 0 $white,
+              0 20px 0 0 $white;
+}
+
+  &:hover::before {
+  background-color: $pink-hover;
+  box-shadow: 0 10px 0 0 $pink-hover,
+              0 20px 0 0 $pink-hover;
+}
+
+  &:active::before {
+  background-color: $pink-active;
+  box-shadow: 0 10px 0 0 $pink-active,
+              0 20px 0 0 $pink-active;
+  }
+}
+
+.main-nav--open .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    right: 20px;
+
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: $white;
+
+    transform: rotate(43deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    right: 20px;
+
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: $white;
+
+    transform: rotate(-43deg);
+  }
+
+    &:hover::before,
+    &:hover::after {
+    background-color: $pink-hover;
+}
+
+    &:active::before,
+    &:active::after {
+    background-color: $pink-active;
+  }
+}
+
+.main-nav__list,
+.main-nav__item {
+  list-style: none;
+}
+
+.main-nav__list {
+  position: relative;
+}
+
+.main-nav__item {
+  min-height: 62px;
+}
+
+.main-nav__item a {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 15px;
+
+  font-family: "Open Sans Bold";
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  @include font-1832;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid #000000;
+  background-color: $main-color;
+
+  &:hover {
+    color: $pink-hover;
+  }
+
+  &:active {
+    color: $pink-active;
+  }
+}

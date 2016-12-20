@@ -1,0 +1,19 @@
+.page-title {
+  display: block;
+
+  font-family: "Open Sans Light";
+  color: $white;
+  font-weight: lighter;
+  @include font-2430;
+  text-align: center;
+  background-color: none;
+
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 35px;
+  padding-bottom: 53px;
+}
+
+.page-title.visually-hidden {
+  display: none;
+}

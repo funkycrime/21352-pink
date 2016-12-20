@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
     <div class="container">
       <header class="pink-header">
-        <div class="pink-header  logo">
-          <img src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+        <div class="pink-header__logo">
+          <a href="index.html"><img class="pink-header__img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"></a>
         </div>
-        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <nav class="main-nav  main-nav--open  main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#">Главная</a></li>
-              <li class="main-nav__item"><a href="#">Фотографии</a></li>
-              <li class="main-nav__item"><a href="#">Конкурс</a></li>
+              <li class="main-nav__item"><a href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
               <li class="main-nav__item"><a href="https://www.htmlacademy.ru">HTML Academy</a></li>
             </ul>
           </div>
@@ -24,150 +28,182 @@
         <h1 class="page-title  visually-hidden">Pink</h1>
       </header>
 
+
       <section class="download">
-        <img src="http://placehold.it/320x314" alt="Приложение в Вашем телефоне">
-        <a href="#">Скачать приложение</a>
+        <img class="download__img" src="../img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение в Вашем телефоне">
+        <a class="download__link" href="#">Скачать приложение</a>
         <div class="download-apps-list">
-          <a class="download-apps__item  download-apps__item--ios-app" href="#"><img src="http://placehold.it/47x56" width="47" height="56" alt="Приложение для Apple"></a>
-          <a class="download-apps__item  download-apps__item--android-app" href="#"><img src="http://placehold.it/43x47" width="43" height="47" alt="Приложение для Android"></a>
-          <a class="download-apps__item  download-apps__item--windows-app" href="#"><img src="http://placehold.it/44x41" width="44" height="41" alt="Приложение для Windows Phone"></a>
-          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <a class="download-apps__item  download-apps__item--ios-app" href="#"><img src="../img/logo-apple.svg" width="47" height="56" alt="Приложение для Apple"></a>
+          <a class="download-apps__item  download-apps__item--android-app" href="#"><img src="../img/logo-android.svg" width="43" height="47" alt="Приложение для Android"></a>
+          <a class="download-apps__item  download-apps__item--windows-app" href="#"><img src="../img/logo-microsoft.svg" width="44" height="41" alt="Приложение для Windows Phone"></a>
+          <p class="download-apps__info-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
+
 
       <section class="features">
         <div class="features-intro">
           <p class="features-intro__text">Устали от серости мегаполиса?</p>
-          <p class="features-intro__text">Нам есть, что вам предложить!</p>
+          <p class="features-intro__text features-intro__text--last">Нам есть, что вам предложить!</p>
         </div>
         <article class="features-items">
           <div class="features-item">
-            <h2>Поднимает настроение</h2>
+            <h2 class="features-item__title">Поднимает настроение</h2>
             <p class="features-item__text">Приложение позволит вас победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
           <div class="features-item">
-            <h2>Меняет мир вокруг</h2>
+            <h2 class="features-item__title">Меняет мир вокруг</h2>
             <p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
           <div class="features-item">
-            <h2>Заводит новых друзей</h2>
+            <h2 class="features-item__title">Заводит новых друзей</h2>
             <p class="features-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
         </article>
-        <img class="features-screen" src="http://placehold.it/157x320" width="157" height="320" alt="Всем привет!">
+        <img class="features-screen" src="../img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
       </section>
+
 
       <section class="feedback-slider">
         <div class="feedback-slider__wrapper">
-          <ul>
-            <li class="feedback-slider__slide">
-              <p class="feedback-slider__slide-name">Николай Петров</p>
-              <p class="feedback-slider__slide-comment">
-                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-              </p>
-            </li>
-            <li class="feedback-slider__slide"></li>
-            <li class="feedback-slider__slide"></li>
-          </ul>
+          <div class="feedback-slider__inner-slider">
+            <ul class="feedback-slider__slides">
+              <li class="feedback-slider__slide">
+                <p class="feedback-slider__slide-name">Николай Петров</p>
+                <p class="feedback-slider__slide-comment">
+                  "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+                </p>
+              </li>
+              <li class="feedback-slider__slide">
+                ...
+              </li>
+              <li class="feedback-slider__slide">
+                ...
+              </li>
+            </ul>
+          </div>
+
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+
           <div class="feedback-slider__slider-controls">
-            <i class="active"></i>
-            <i></i>
-            <i></i>
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
           </div>
         </div>
       </section>
 
+
       <section class="price-slider">
-        <ul>
-          <li class="price-slider__slide">
-            <table class="price-slider__rate  price-slider__rate--hit">
-              <tr>
-                <td>
-                  <img src="http://placehold.it/74x73" width="74" height="73" alt="Хит">
-                  <h3>Стандарт</h3>
-                  <span class="price-slider__price">3,99 USD</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="price-slider__option">Розовый фильтр</span>
-                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="price-slider__option">Смайлики</span>
-                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="price-slider__option">Комментарии</span>
-                  <img src="http://placehold.it/27x26" width="27" height="26" alt="Не включать">
-                </td>
-              </tr>
-            </table>
-          </li>
-          <li class="price-slider__slide">
-            <table class="price-slider__rate">
-              <tr>
-                <td>
-                  <img src="http://placehold.it/74x73" width="74" height="73" alt="Хит">
-                  <h3>...</h3>
-                  <span class="price-slider__price">...</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="price-slider__option">Розовый фильтр</span>
-                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="price-slider__option">Смайлики</span>
-                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="price-slider__option">Комментарии</span>
-                  <img src="http://placehold.it/27x26" width="27" height="26" alt="Не включать">
-                </td>
-              </tr>
-            </table>
-          </li>
-          <li class="price-slider__slide">
-            <table class="price-slider__rate">
-              <tr>
-                <td>
-                  <img src="http://placehold.it/74x73" width="74" height="73" alt="Хит">
-                  <h3>Стандарт</h3>
-                  <span class="price-slider__price">3,99 USD</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="price-slider__option">Розовый фильтр</span>
-                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="price-slider__option">Смайлики</span>
-                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Добавить">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="price-slider__option">Комментарии</span>
-                  <img src="http://placehold.it/27x26" width="27" height="26" alt="Не включать">
-                </td>
-              </tr>
-            </table>
-          </li>
-        </ul>
+        <div class="price-slider__slider">
+          <div class="price-slider__inner-slider">
+            <ul class="price-slider__slides">
+
+              <li class="price-slider__slide">
+                <table class="price-slider__rate">
+                  <tr>
+                    <th class="price-slider__rate-title price-slider__rate-title">
+                    <h3>База</h3>
+                    <span class="price-slider__price">1,99 USD</span>
+                  </th>
+                  </tr>
+                  <tr>
+                    <td class="price-slider__option">
+                      <span class="price-slider__option-name">Розовый фильтр</span>
+                      <img class="price-slider__option-select  price-slider__option-select--yes" src="../img/icon-yes.svg" width="31" height="21" alt="Добавить">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="price-slider__option">
+                      <span class="price-slider__option-name">Смайлики</span>
+                      <img class="price-slider__option-select  price-slider__option-select--no" src="../img/icon-no.svg" width="27" height="26" alt="Не включать">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="price-slider__option">
+                      <span class="price-slider__option-name">Комментарии</span>
+                      <img class="price-slider__option-select  price-slider__option-select--no" src="../img/icon-no.svg" width="27" height="26" alt="Не включать">
+                    </td>
+                  </tr>
+                </table>
+              </li>
+
+              <li class="price-slider__slide">
+                <table class="price-slider__rate">
+                  <tr>
+                    <th class="price-slider__rate-title  price-slider__rate-title--hit">
+                    <span class="price-slider__rate--hit-text">Хит</span>
+                    <h3>Стандарт</h3>
+                    <span class="price-slider__price">3,99 USD</span>
+                  </th>
+                  </tr>
+                  <tr>
+                    <td class="price-slider__option">
+                      <span class="price-slider__option-name">Розовый фильтр</span>
+                      <img class="price-slider__option-select  price-slider__option-select--yes" src="../img/icon-yes.svg" width="31" height="21" alt="Добавить">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="price-slider__option">
+                      <span class="price-slider__option-name">Смайлики</span>
+                      <img class="price-slider__option-select  price-slider__option-select--yes" src="../img/icon-yes.svg" width="31" height="21" alt="Добавить">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="price-slider__option">
+                      <span class="price-slider__option-name">Комментарии</span>
+                      <img class="price-slider__option-select  price-slider__option-select--no" src="../img/icon-no.svg" width="27" height="26" alt="Не включать">
+                    </td>
+                  </tr>
+                </table>
+              </li>
+
+              <li class="price-slider__slide">
+                <table class="price-slider__rate">
+                  <tr>
+                    <th class="price-slider__rate-title">
+                      <h3>Анлим</h3>
+                      <span class="price-slider__price">9,99 USD</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="price-slider__option">
+                      <span class="price-slider__option-name">Розовый фильтр</span>
+                      <img class="price-slider__option-select  price-slider__option-select--yes" src="../img/icon-yes.svg" width="31" height="21" alt="Добавить">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="price-slider__option">
+                      <span class="price-slider__option-name">Смайлики</span>
+                      <img class="price-slider__option-select  price-slider__option-select--yes" src="../img/icon-yes.svg" width="31" height="21" alt="Добавить">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="price-slider__option">
+                      <span class="price-slider__option-name">Комментарии</span>
+                      <img class="price-slider__option-select  price-slider__option-select--yes" src="../img/icon-yes.svg" width="31" height="21" alt="Добавить">
+                    </td>
+                  </tr>
+                </table>
+              </li>
+
+            </ul>
+          </div>
+
+          <input type="radio" id="btn-4" name="toggle">
+          <input type="radio" id="btn-5" name="toggle">
+          <input type="radio" id="btn-6" name="toggle">
+
+          <div class="price-slider__slider-controls">
+            <label class="price-slider__toggle" for="btn-4"></label>
+            <label class="price-slider__toggle" for="btn-5"></label>
+            <label class="price-slider__toggle" for="btn-6"></label>
+          </div>
+        </div>
       </section>
+
 
       <section class="contacts">
         <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
@@ -185,12 +221,13 @@
         </article>
       </section>
 
+
       <footer class="main-footer">
-        <img src="http://placehold.it/320x645" width="320" height="645" alt="Мы на карте">
+<!--      <img src="http://placehold.it/320x645" width="320" height="645" alt="Мы на карте">-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123625!2d30.320894615640324!3d59.93879686904851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1481749958847" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       </footer>
-    </div>
 
 <!--    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>-->
-
+    </div>
   </body>
 </html>

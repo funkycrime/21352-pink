@@ -1,0 +1,38 @@
+.download {
+  min-height: 667px;
+}
+
+.download__img {
+  display: block;
+  position: relative;
+  padding-top: 108px;
+}
+
+.download__link {
+  display: block;
+
+  font-family: "Open Sans Bold";
+  font-size: 18px;
+  line-height: 49px;
+  font-weight: bold;
+  color: $white;
+  text-align: center;
+
+  margin-top: 28px;
+  margin-bottom: 32px;
+  margin-left: 19px;
+  margin-right: 20px;
+
+  border: 3px solid $white;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: $white;
+    color: $pink-hover;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $pink-active;
+  }
+}

@@ -1,0 +1,36 @@
+.pink-header {
+  display: block;
+  position: relative;
+//  background-color: $main-color;
+}
+
+.pink-header__logo {
+  min-height: 70px;
+  border-bottom: 1px solid #000000;
+}
+
+.pink-header__img {
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 20px;
+}
+
+@media (min-width: #{$tablet-width}) and (max-width: #{desktop-width - 1px}) {
+  .pink-header__logo {
+    min-height: 700px;
+    height: 110px;
+  }
+}
+
+//@include tablet {
+//  .pink-header__logo {
+//    min-height: 110px;
+////    padding-top: 44px;
+////    padding-bottom: 100px;
+//  }
+//
+//  .pink-header__img {
+//
+//  }
+//}
