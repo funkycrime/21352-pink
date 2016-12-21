@@ -1,0 +1,39 @@
+@import "normalize.scss";
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/fonts.scss";
+@import "global/outlines.scss";
+@import "global/scaffolding.scss";
+
+//index.html
+@import "blocks/pink-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-title.scss";
+@import "blocks/download.scss";
+@import "blocks/download-apps.scss";
+@import "blocks/features.scss";
+@import "blocks/features-intro.scss";
+@import "blocks/features-items.scss";
+@import "blocks/features-item.scss";
+@import "blocks/features-screen.scss";
+@import "blocks/feedback-slider.scss";
+@import "blocks/price-slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/main-footer.scss";
+
+///*form.html*/
+@import "blocks/register.scss";
+//@import "blocks/inner-footer.scss";
+//@import "blocks/social.scss";
+//@import "blocks/copyright.scss";
+//
+///*photo.html*/
+//@import "blocks/photo-add.scss";
+//@import "blocks/photos.scss";
+//@import "blocks/upload.scss";
+//@import "blocks/post-it.scss";
+//@import "blocks/upload-ok.scss";
+//@import "blocks/upload-deny.scss";
+
